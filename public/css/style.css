@@ -4,8 +4,24 @@
    padding: 0;
    box-sizing: border-box;
 }
-
+#links{
+   display: flex;
+   
+}
+#picture{
+   display: flex;
+   position: relative;
+   width: 1200px;
+   height: 1200px;
+   margin-left: 150px;
+   
+   border: #333333;
+   margin-top: 0%;
+   margin-bottom: auto;
+   padding-bottom: 200px;
+}
 body {
+   background-image:url ("public/images/myFavourite.JPG");
    font-family: Arial, sans-serif;
    line-height: 1.6;
 }
@@ -38,9 +54,8 @@ section {
 }
 
 #home {
-   background: url('braid1.jpg') no-repeat center center/cover;
-   height: 400px;
-   display: flex;
+   display: flex;  
+   height: 400px; 
    justify-content: center;
    align-items: center;
    color: white;
@@ -72,6 +87,10 @@ button:hover {
    padding: 20px;
    background-color: #f4f4f4;
    border-radius: 8px;
+}
+#gallery-links{
+   display: flexbox;
+   flex-wrap: ;
 }
 
 #gallery .gallery-images {

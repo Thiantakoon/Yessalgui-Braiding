@@ -1,13 +1,9 @@
 
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
+
 
 body {
    font-family: Arial, sans-serif;
-   line-height: 1.6;
+background-image: url('myFavourite.jpg');
 }
 
 header {
@@ -30,7 +26,7 @@ nav ul li a {
    color: white;
    text-decoration: none;
    font-size: 18px;
-}
+}+
 
 section {
    padding: 20px;
@@ -38,7 +34,7 @@ section {
 }
 
 #home {
-   background: url('braid1.jpg') no-repeat center center/cover;
+
    height: 400px;
    display: flex;
    justify-content: center;
@@ -66,7 +62,17 @@ button:hover {
    display: flex;
    justify-content: space-around;
 }
-
+#picture{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+   width: 1500px;
+   height: 1500px;
+   border: 1px solid black;
+   margin-bottom: 900px;
+   padding-bottom: 500px;
+}
 .service {
    width: 30%;
    padding: 20px;
@@ -74,12 +80,14 @@ button:hover {
    border-radius: 8px;
 }
 
-#gallery .gallery-images {
+.gallery-images {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
 flex:1;
-   grid-template-columns: repeat(3);
-   gap: 10px;
+   gap: 5px;
+   width: ;
+   height: ;
+   padding: 5px;
 }
 
 #gallery-images img {
