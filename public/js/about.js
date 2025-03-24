@@ -1,23 +1,17 @@
+"use strict";
 
-
-    // Replace with your API key and location
-    const apiKey = "z2Hpe9VgwAlAeRSTkaeLh1QWkEeS6PmN";
+    const apiKey = "77e03a535c4d1e6016426e2f94009848";
     const location = "Lexington,KY";
 
-    // Function to fetch weather data
+    // https://api.unsplash.com/photos/random/?client_id=YOUR_ACCESS_KEY
+
     async function getWeather() {
-      const apiUrl = "https://api.www.accuweather.com/data/2.5/weather?q=${lexington,KY}&appid=${z2Hpe9VgwAlAeRSTkaeLh1QWkEeS6PmN}&units=metric";
-      const response = await fetch(apiUrl);
-      const data = await response.json();
-    
+      const apiUrl = "https://api.www.accuweather.com/data/2.5/weather?q=${lexington,KY}&appid=${77e03a535c4d1e6016426e2f94009848}&units=metrics";
 
-      // Update the HTML elements
-      document.getElementById("location").textContent = data.name;
-      document.getElementById("temperature").textContent = `Temperature: ${data.main.temp}°C`;
-      document.getElementById("conditions").textContent = `Conditions: ${data.weather[0].description}`;
+      const response = await fetch(Url);
+      const data = await response.json()
+      const getWeather = data
     
-
-    // Call the function to fetch and display weather data
     getWeather();
 
     }
